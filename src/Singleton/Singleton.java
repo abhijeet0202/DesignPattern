@@ -8,7 +8,7 @@ package Singleton;
  *
  */
 public class Singleton {
-	private static Singleton objInstance;
+	private volatile static Singleton objInstance;
 	private Singleton(){}
 	public static Singleton getInstance(){
 		if (objInstance == null){
