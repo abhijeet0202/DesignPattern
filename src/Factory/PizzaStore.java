@@ -10,8 +10,8 @@ package Factory;
 public class PizzaStore {
 	SimplePizzaFactory simplePizzaFactory;
 	
-	public PizzaStore(SimplePizzaFactory simplePizzaFactory){
-		this.simplePizzaFactory = simplePizzaFactory;
+	public PizzaStore(){
+		simplePizzaFactory = new SimplePizzaFactory();
 	}
 	
 	public Pizza orderPizza(String Pizzatype){

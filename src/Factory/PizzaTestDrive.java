@@ -14,11 +14,10 @@ public class PizzaTestDrive {
 	 */
 	public static void main(String[] args) {
 		
-		SimplePizzaFactory simplePizzaFactory = new SimplePizzaFactory();
-		PizzaStore store = new PizzaStore(simplePizzaFactory);
+		PizzaStore store = new PizzaStore();
 		
 		Pizza pizza = store.orderPizza("cheese");
-		System.out.println("Abhijeet Orderd"+ pizza.getName()+ "\n");
+		System.out.println("Abhijeet Orderd: "+ pizza.getName()+ "\n");
 		
 		}
 }
