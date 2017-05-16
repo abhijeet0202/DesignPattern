@@ -13,12 +13,12 @@ public class ClientObserver implements Observer {
 	private float humidity;
 	private float pressure;
 	
-	@SuppressWarnings("unused")
-	private Subject weatherData;
+	//@SuppressWarnings("unused")
+	//private Subject weatherData;
 	
 	
 	public ClientObserver(Subject weatherData){
-		this.weatherData = weatherData;
+		//this.weatherData = weatherData;
 		System.out.println("Registering Myself With Subject");
 		weatherData.registerObserver(this);
 	}
