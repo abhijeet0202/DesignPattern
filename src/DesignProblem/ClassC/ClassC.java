@@ -2,6 +2,7 @@ package DesignProblem.ClassC;
 
 public class ClassC {
 	
+	//public BInterface objB;
 	public static BInterface objB;
 	
 	public void C1(){
@@ -13,5 +14,8 @@ public class ClassC {
 		objB.B2();
 		
 	}
+	/*public void setBInterface(BInterface MyobjB) {
+		objB = MyobjB;
+	}*/
 
 }

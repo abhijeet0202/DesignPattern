@@ -25,6 +25,22 @@ class Cake{
 	private final double milk;
 	private final int cherry;
 	
+	private Cake(CakeBuilder builder){
+		this.sugar = builder.sugar;
+		this.butter = builder.butter;
+		this.eggs = builder.eggs;
+		this.vanilla = builder.vanilla;
+		this.flour = builder.flour;
+		this.bakingpowder = builder.bakingpowder;
+		this.milk = builder.milk;
+		this.cherry = builder.cherry;
+	}
+	
+	@Override
+    public String toString() {
+        return "Cake{" + "sugar=" + sugar + ", butter=" + butter + ", eggs=" + eggs + ", vanila=" + vanilla + ", flour=" + flour + ", bakingpowder=" + bakingpowder + ", milk=" + milk + ", cherry=" + cherry + '}';
+
+    }
 	//Nested Builder Class
 	public static class CakeBuilder{
 		private  double sugar;
@@ -74,19 +90,6 @@ class Cake{
 			return new Cake(this);
 		}
 	}
-	private Cake(CakeBuilder builder){
-		this.sugar = builder.sugar;
-		this.butter = builder.butter;
-		this.eggs = builder.eggs;
-		this.vanilla = builder.vanilla;
-		this.flour = builder.flour;
-		this.bakingpowder = builder.bakingpowder;
-		this.milk = builder.milk;
-		this.cherry = builder.cherry;
-	}
-	@Override
-    public String toString() {
-        return "Cake{" + "sugar=" + sugar + ", butter=" + butter + ", eggs=" + eggs + ", vanila=" + vanilla + ", flour=" + flour + ", bakingpowder=" + bakingpowder + ", milk=" + milk + ", cherry=" + cherry + '}';
-
-    }
+	
+	
 }
