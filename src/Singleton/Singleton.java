@@ -23,5 +23,4 @@ public class Singleton {
 		System.out.println(objInstance);
 		return objInstance;
 	}
-
 }
